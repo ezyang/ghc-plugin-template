@@ -1,6 +1,6 @@
 name:                ghc-plugin-template
 version:             0.0.1
-synopsis:            Template for writing GHC plugins
+synopsis:            Sample for writing GHC plugins
 description:
   This plugin gives an example of defining a compiler plugin for
   GHC. You mark functions with the `Strictify` annotation and GHC
