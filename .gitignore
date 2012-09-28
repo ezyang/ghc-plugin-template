@@ -1,0 +1,8 @@
+_darcs
+*.o
+*.hi
+*~
+dist*
+tests/*.o
+tests/*.hi
+tests/Traced
