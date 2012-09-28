@@ -5,4 +5,4 @@ _darcs
 dist*
 tests/*.o
 tests/*.hi
-tests/Traced
+tests/SampleTest
