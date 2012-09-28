@@ -27,7 +27,7 @@ transformFunc guts x = do
     else return x
 
 shouldTransformBind guts (NonRec b _) = shouldTransform guts b
-shouldTransformBind guts (Rec bs) = and `liftM` mapM (shouldTransform guts . fst) bs
+shouldTransformBind guts (Rec bs) = or `liftM` mapM (shouldTransform guts . fst) bs
 
 -- CoreExpr = Expr CoreBndr, which is the meat of Core.  Defined in
 -- 'compiler/coreSyn/CoreSyn.lhs'.  The sample code here is just a
